@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{49C0EAFE-0B1D-4B99-AC8D-3F8F6E52BAE5}</ProjectGuid>
+    <ProjectGuid>{D437BFDB-98EA-4CF2-8093-EF3A00BE1ED4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LocaMat</RootNamespace>
-    <AssemblyName>LocaMat</AssemblyName>
+    <RootNamespace>LocaLMat.Business</RootNamespace>
+    <AssemblyName>LocaLMat.Business</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
