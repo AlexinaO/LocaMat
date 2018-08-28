@@ -49,6 +49,7 @@
     <Compile Include="Classes\CategorieProduit.cs" />
     <Compile Include="Classes\Client.cs" />
     <Compile Include="Classes\Location.cs" />
+    <Compile Include="Classes\OffreProduit.cs" />
     <Compile Include="Classes\Produit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
