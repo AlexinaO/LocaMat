@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace LocaMat.DAL.Classes
 {
-    class CategorieProduit
+    public class CategorieProduit
     {
+        public int Id { get; set; }
+        public string Nom { get; set;}
+
     }
 }
