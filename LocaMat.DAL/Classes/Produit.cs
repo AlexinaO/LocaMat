@@ -15,6 +15,8 @@ namespace LocaMat.DAL.Classes
         public string Description { get; set; }
 
         public int IdCategorie { get; set; }
+        [ForeignKey("IdCategorie")]
+        public virtual CategorieProduit CategorieProduit { get; set; }
 
         public Decimal PrixJourHT { get; set; }
     }
