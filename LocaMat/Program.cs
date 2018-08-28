@@ -10,6 +10,7 @@ namespace LocaMat
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
