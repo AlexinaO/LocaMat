@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using LocaMat.DAL.Classes;
 
 namespace LocaMat.DAL.Data
 {
@@ -13,6 +14,6 @@ namespace LocaMat.DAL.Data
         public DbSet<Location> Locations { get; set; }
         public DbSet<OffreProduit> OffresProduits { get; set; }
         public DbSet<Produit> Produits { get; set; }
-        public DbSet<Clients> Clients { get; set; }
+        public DbSet<Client> Clients { get; set; }
     }
 }
