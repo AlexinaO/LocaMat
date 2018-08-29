@@ -74,13 +74,13 @@ namespace LocaMat.Application.Classes_Application
                 case "Q":
                     break;
                 default:
-                    Classes_Application.Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
+                    Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
                     break;
             }
             Console.ReadKey();
         }
 
-        public static void MenuGestionClients()
+        /*public static void MenuGestionClients()
         {
             Console.Clear();
             Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
@@ -111,7 +111,7 @@ namespace LocaMat.Application.Classes_Application
 
                 case "4":
                     SupprimerClient();
-                    break;*/
+                    break;
 
                 case "r":
                 case "R":
@@ -122,11 +122,8 @@ namespace LocaMat.Application.Classes_Application
                 case "Q":
                     break;
                 default:
-                Application.Classes_Application.Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
+                Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
                     break;
             }
-            Console.ReadKey();
-
-        }
+            Console.ReadKey();*/
     }
-}
