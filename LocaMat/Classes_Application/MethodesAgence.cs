@@ -1,9 +1,9 @@
 ﻿using LocaMat.DAL.Classes;
 using System;
 using LocaMat.Business;
+using LocaMat.Classes_Application;
 
-
-namespace LocaMat.DAL.Data
+namespace LocaMat.Application.Classes_Application
 {
     public class MethodesAgence
     {
@@ -20,7 +20,7 @@ namespace LocaMat.DAL.Data
             agence.Adresse = adresseAgence;
         }
 
-        private static void ModifierAgence()
+        /*private static void ModifierAgence()
         {
             Console.WriteLine();
             Console.WriteLine("Modifier une Agence");
@@ -30,18 +30,23 @@ namespace LocaMat.DAL.Data
 
             var serviceAgence = new ServicesAgence();
             serviceAgence.ModifierAgence(agence);
-        }
+        }*/
 
-        private static Agence ChoisirAgence()
+        /*private static Agence ChoisirAgence()
         {
             AfficherAgences();
             Console.WriteLine("Quelle agence (Id)?");
             var idAgence = int.Parse(Console.ReadLine());
 
             var serviceAgence = new ServicesAgence();
-            serviceAgence.GetId(idAgence);
-
-
+            serviceAgence.GetAgence(idAgence);
         }
+
+        private static void AfficherAgences()
+        {
+            Console.Clear();
+            Esthetisme.MiseEnFormeTexte("LISTE DES AGENCES");
+
+        }*/
     }
 }

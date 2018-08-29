@@ -38,5 +38,14 @@ namespace LocaMat.Business
                 contexte.SaveChanges();
             }
         }
+        /*public IEnumerable<Agence> ListerAgences()
+        {
+            using (var contexte = new Contexte())
+            {
+                return contexte.Marques
+                    .Include(x => x.Modeles)
+                    .OrderBy(x => x.Nom).ToList();
+            }
+        }*/
     }
 }

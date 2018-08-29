@@ -1,10 +1,7 @@
 ﻿using System;
 using LocaMat.Classes_Application;
-using LocaLMat.Business;
-using LocaMat.DAL.Classes;
-using LocaMat.DAL.Data;
-using LocaMat.Application;
 using LocaMat.Business;
+using LocaMat.DAL.Classes;
 
 namespace LocaMat.Application.Classes_Application
 {
@@ -31,7 +28,7 @@ namespace LocaMat.Application.Classes_Application
 
 
 
-        public static string MenuGestionAgences()
+        public static void MenuGestionAgences()
         {
             Console.Clear();
             Esthetisme.MiseEnFormeTexte("APPLICATION DE LOCATION DE MATERIEL\n\n", ConsoleColor.DarkCyan, centre: true);
@@ -53,7 +50,7 @@ namespace LocaMat.Application.Classes_Application
                     var Agence = service.FaireListe<Agence>();
                     break;
 
-                case "2":
+                /*case "2":
                     CreerAgence();
                     break;
 
@@ -68,7 +65,7 @@ namespace LocaMat.Application.Classes_Application
                 case "r":
                 case "R":
                     MenuAccueil();
-                    break;
+                    break;*/
 
                 case "q":
                 case "Q":
