@@ -10,12 +10,12 @@ namespace LocaLMat.Business
 {
     public class Services
     {
-        public static void FaireListe(IEnumerable <ClasseChoisie>)
+        public IEnumerable<TClasseChoisie> FaireListe <TClasseChoisie > ()
+            where TClasseChoisie:class
         {
             using (var contexte = new Contexte())
             {
-                return contexte.ClasseChoisie
-                    .OrderBy(x => x.ClasseChoisie).ToList();
+                return contexte.Set<TClasseChoisie>().ToList();
             }
         }
     }

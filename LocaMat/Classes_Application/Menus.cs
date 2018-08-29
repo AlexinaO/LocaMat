@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.IO;
 using LocaMat.Application.Classes_Application;
 using LocaMat.Classes_Application;
+using LocaLMat.Business;
+using LocaMat.DAL.Classes;
 
 namespace LocaMat.Application.Classes_Application
 {
@@ -30,7 +32,7 @@ namespace LocaMat.Application.Classes_Application
 
         }
 
-    }
+
 
         public static string MenuGestionAgences()
         {
@@ -50,7 +52,8 @@ namespace LocaMat.Application.Classes_Application
             switch (choix)
             {
                 case "1":
-                    ListerAgences();
+                var service = new Services();
+                var Agence = service.FaireListe<Agence>();
                     break;
 
                 case "2":
