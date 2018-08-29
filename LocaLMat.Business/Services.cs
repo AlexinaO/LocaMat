@@ -48,6 +48,15 @@ namespace LocaLMat.Business
             }
         }
 
+        public void SupprimerAgence (Agence agence)
+        {
+            using (var contexte = new Contexte())
+            {
+                contexte.Entry(agence).State = EntityState.Deleted;
+                contexte.SaveChanges();
+            }
+        }
+
 
                   
         }
