@@ -56,9 +56,5 @@ namespace LocaLMat.Business
                 contexte.SaveChanges();
             }
         }
-
-
-                  
-        }
-    }
+     }
 }
