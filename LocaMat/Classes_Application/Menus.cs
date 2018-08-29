@@ -52,8 +52,8 @@ namespace LocaMat.Application.Classes_Application
             switch (choix)
             {
                 case "1":
-                var service = new Services();
-                var Agence = service.FaireListe<Agence>();
+                    var service = new Services();
+                    var Agence = service.FaireListe<Agence>();
                     break;
 
                 case "2":
@@ -130,3 +130,4 @@ namespace LocaMat.Application.Classes_Application
             }
             Console.ReadKey();*/
     }
+}
