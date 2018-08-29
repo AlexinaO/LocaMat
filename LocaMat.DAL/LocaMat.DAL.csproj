@@ -61,7 +61,6 @@
     <Compile Include="Classes\OffreProduit.cs" />
     <Compile Include="Classes\Produit.cs" />
     <Compile Include="Data\Contexte.cs" />
-    <Compile Include="Data\MethodesAgence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

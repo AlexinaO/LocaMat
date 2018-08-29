@@ -2,6 +2,7 @@
 using System;
 using LocaMat.Business;
 
+
 namespace LocaMat.DAL.Data
 {
     public class MethodesAgence
@@ -33,8 +34,12 @@ namespace LocaMat.DAL.Data
 
         private static Agence ChoisirAgence()
         {
-            ListerAgences();
+            AfficherAgences();
             Console.WriteLine("Quelle agence (Id)?");
+            var idAgence = int.Parse(Console.ReadLine());
+
+            var serviceAgence = new ServicesAgence();
+            serviceAgence.GetId(idAgence);
 
 
         }
