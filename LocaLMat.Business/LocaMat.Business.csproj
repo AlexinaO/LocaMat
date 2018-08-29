@@ -53,5 +53,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LocaMat.DAL\LocaMat.DAL.csproj">
+      <Project>{A81325F2-F4E8-4630-B0B6-02D620F02E9A}</Project>
+      <Name>LocaMat.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
