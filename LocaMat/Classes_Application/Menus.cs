@@ -10,7 +10,7 @@ namespace LocaMat.Classes_Application
 {
     public class Menus
     {
-        public static int MenuAccueil()
+        public static string MenuAccueil()
         {
             Console.Clear();
 
@@ -25,7 +25,7 @@ namespace LocaMat.Classes_Application
             Esthetisme.MiseEnFormeTexte("Q. Quitter\n\n", centre: false);
             Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
 
-            return int.Parse(Console.ReadLine());
+            return Console.ReadLine();
 
         }
 
