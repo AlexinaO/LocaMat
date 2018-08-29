@@ -29,32 +29,6 @@ namespace LocaMat.Business
             }
             var */
         
-       public void CreerAgence(Agence agence)
-        {
-            using (var contexte = new Contexte())
-            {
-                contexte.Agences.Add(agence);
-                contexte.SaveChanges();
-            }
-        }
-
-        public void ModifierAgence(Agence agence)
-        {
-            using (var contexte = new Contexte())
-            {
-                contexte.Agences.Attach(agence);
-                contexte.Entry(agence).State = EntityState.Modified;
-                contexte.SaveChanges();
-            }
-        }
-
-        public void SupprimerAgence (Agence agence)
-        {
-            using (var contexte = new Contexte())
-            {
-                contexte.Entry(agence).State = EntityState.Deleted;
-                contexte.SaveChanges();
-            }
-        }
+       
      }
 }
