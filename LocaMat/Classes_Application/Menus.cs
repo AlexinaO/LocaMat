@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using
+
 
 namespace LocaMat.Classes_Application
 {
     public class Menus
     {
-        public static void MenuAccueil()
+        public static string MenuAccueil()
         {
             Console.Clear();
 
@@ -23,14 +23,15 @@ namespace LocaMat.Classes_Application
             Esthetisme.MiseEnFormeTexte("5. Gestion des Offres Produits", centre: false);
             Esthetisme.MiseEnFormeTexte("Q. Quitter\n\n", centre: false);
             Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
-        }
-    
-        {
-            
-            
 
             return Console.ReadLine();
+
         }
+
+
+
+
+    }
 
         public static void MenuGestionVoyages()
         {
