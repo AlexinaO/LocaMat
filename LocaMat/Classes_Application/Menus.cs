@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
-using LocaMat.Application.Classes_Application;
 using LocaMat.Classes_Application;
 using LocaLMat.Business;
 using LocaMat.DAL.Classes;
