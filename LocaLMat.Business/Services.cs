@@ -38,6 +38,16 @@ namespace LocaLMat.Business
             }
         }
 
+        public void ModifierAgence(Agence agence)
+        {
+            using (var contexte = new Contexte())
+            {
+                contexte.Agences.Attach(agence);
+                contexte.Entry(agence).State = EntityState.Modified;
+                contexte.SaveChanges();
+            }
+        }
+
 
                   
         }
