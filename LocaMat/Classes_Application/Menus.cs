@@ -4,6 +4,7 @@ using LocaLMat.Business;
 using LocaMat.DAL.Classes;
 using LocaMat.DAL.Data;
 using LocaMat.Application;
+using LocaMat.Business;
 
 namespace LocaMat.Application.Classes_Application
 {
