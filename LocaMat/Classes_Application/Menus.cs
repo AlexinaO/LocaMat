@@ -31,7 +31,7 @@ namespace LocaMat.Classes_Application
 
     }
 
-        public static string MenuGestionAgence()
+        public static string MenuGestionAgences()
         {
             Console.Clear();
             Esthetisme.MiseEnFormeTexte("APPLICATION DE LOCATION DE MATERIEL\n\n", ConsoleColor.DarkCyan, centre: true);
