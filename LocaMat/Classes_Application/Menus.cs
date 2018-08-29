@@ -51,11 +51,11 @@ namespace LocaMat.Application.Classes_Application
 
                     break;
 
-                /*case "2":
-                    CreerAgence();
+                case "2":
+                    MethodesAgence.CreerAgence();
                     break;
 
-                case "3":
+                /*case "3":
                     ModifierAgence();
                     break;
 
