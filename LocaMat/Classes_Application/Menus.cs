@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 
 namespace LocaMat.Classes_Application
@@ -24,63 +25,55 @@ namespace LocaMat.Classes_Application
             Esthetisme.MiseEnFormeTexte("Q. Quitter\n\n", centre: false);
             Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
 
-            return Console.ReadLine();
+            return (Console.ReadLine());
 
         }
 
-
-
-
     }
 
-        public static void MenuGestionVoyages()
+        public static void MenuGestionAgence()
         {
             Console.Clear();
-            Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
-            Esthetisme.MiseEnFormeTexte("GESTION DES VOYAGES\n", centre: false);
-            Esthetisme.MiseEnFormeTexte("1. Voir les dossiers en attente", centre: false);
-            Esthetisme.MiseEnFormeTexte("2. Voir les dossiers en cours", centre: false);
-            Esthetisme.MiseEnFormeTexte("3. Voir les dossiers refusés", centre: false);
-            Esthetisme.MiseEnFormeTexte("4. Voir les dossiers acceptés", centre: false);
-            Esthetisme.MiseEnFormeTexte("5. Voir la liste des voyages", centre: false);
+            Esthetisme.MiseEnFormeTexte("APPLICATION DE LOCATION DE MATERIEL\n\n", ConsoleColor.DarkCyan, centre: true);
+            Esthetisme.MiseEnFormeTexte("GESTION DES AGENCES\n", centre: false);
+            Esthetisme.MiseEnFormeTexte("1. Liste des Agences", centre: false);
+            Esthetisme.MiseEnFormeTexte("2. Créer une Agence", centre: false);
+            Esthetisme.MiseEnFormeTexte("3. Modifier une Agence", centre: false);
+            Esthetisme.MiseEnFormeTexte("4. Supprimer une Agence", centre: false);
             Esthetisme.MiseEnFormeTexte("R. Revenir au menu précédent", centre: false);
             Esthetisme.MiseEnFormeTexte("Q. Quitter\n\n", centre: false);
             Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
 
-            var choix2 = Console.ReadLine();
+            var choix = Console.ReadLine();
 
-            switch (choix2)
+            switch (choix)
             {
-                /*case "1":
-                    ListerLesDossierEnAttente();
+                case "1":
+                    ListerAgences();
                     break;
 
                 case "2":
-                    ListerLesDossiersEnCours();
+                    CreerAgence();
                     break;
 
                 case "3":
-                    ListerLesDossiersRefusé();
+                    ModifierAgence();
                     break;
 
                 case "4":
-                    ListerLesDossiersAcceptés();
+                    SupprimerAgence();
                     break;
-
-                case "5":
-                    ListeDesVoyages();
-                    break;*/
 
                 case "r":
                 case "R":
-                    MenuGestionCommerciale();
+                    MenuAccueil();
                     break;
 
                 case "q":
                 case "Q":
                     break;
                 default:
-                    Classes.Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
+                    Classes_Application.Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
                     break;
             }
             Console.ReadKey();
@@ -128,7 +121,7 @@ namespace LocaMat.Classes_Application
                 case "Q":
                     break;
                 default:
-                    Classes.Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
+                Application.Classes_Application.Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
                     break;
             }
             Console.ReadKey();
