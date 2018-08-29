@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 
 
-namespace LocaMat.Classes_Application
+namespace LocaMat.Application.Classes_Application
 {
     public class Menus
     {
