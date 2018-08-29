@@ -20,24 +20,24 @@ namespace LocaMat.Application
                 var choix = Classes_Application.Menus.MenuAccueil();
                 switch (choix)
                 {
-                    case 1:
+                    case "1":
                         Classes_Application.Menus.MenuGestionAgences();
                         break;
 
-                    case 2:
+                    case "2":
                         Classes_Application.Menus.MenuGestionProduits();
                         break;
-                    case 3:
+                    case "3":
                         Classes_Application.Menus.MenuGestionClients();
                         break;
-                    case 4:
+                    case "4":
                         Classes_Application.Menus.MenuGestionLocations();
                         break;
-                    case 5:
+                    case "5":
                         Classes_Application.Menus.MenuGestionOffresProduits();
                         break;
-                    case Q:
-                    case q:
+                    case "Q":
+                    case "q":
                         Environment.Exit(0);
                         break;
                  }
