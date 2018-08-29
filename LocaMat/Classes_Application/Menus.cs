@@ -47,7 +47,7 @@ namespace LocaMat.Application.Classes_Application
             {
                 case "1":
                     var service = new Services();
-                    var Agence = service.FaireListe<Agence>();
+                    var agences = service.FaireListe<Agence>();
                     break;
 
                 /*case "2":

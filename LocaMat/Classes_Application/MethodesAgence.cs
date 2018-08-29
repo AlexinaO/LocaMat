@@ -40,13 +40,21 @@ namespace LocaMat.Application.Classes_Application
 
             var serviceAgence = new ServicesAgence();
             serviceAgence.GetAgence(idAgence);
-        }
+        }*/
 
         private static void AfficherAgences()
         {
             Console.Clear();
             Esthetisme.MiseEnFormeTexte("LISTE DES AGENCES");
 
-        }*/
+            foreach (var agence in agences)
+            {
+                Console.Write($"{agence.Ville} ({agence.Id})");
+
+            }
+
+
+
+        }
     }
 }
