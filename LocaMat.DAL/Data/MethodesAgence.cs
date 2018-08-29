@@ -34,5 +34,13 @@ namespace LocaMat.DAL.Data
             var serviceAgence = new ServicesAgence();
             serviceAgence.ModifierAgence(agence);
         }
+
+        private static Agence ChoisirAgence()
+        {
+            ListeAgences();
+            Console.WriteLine("Quelle agence (Id)?");
+
+
+        }
     }
 }
