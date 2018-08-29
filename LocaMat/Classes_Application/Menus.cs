@@ -2,6 +2,7 @@
 using LocaMat.Classes_Application;
 using LocaMat.Business;
 using LocaMat.DAL.Classes;
+using LocaMat.Application.Classes_Application;
 
 namespace LocaMat.Application.Classes_Application
 {
@@ -46,8 +47,8 @@ namespace LocaMat.Application.Classes_Application
             switch (choix)
             {
                 case "1":
-                    var service = new Services();
-                    var agences = service.FaireListe<Agence>();
+                    MethodesAgence.AfficherAgences();
+
                     break;
 
                 /*case "2":

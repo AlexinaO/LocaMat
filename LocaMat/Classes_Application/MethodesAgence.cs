@@ -2,6 +2,7 @@
 using System;
 using LocaMat.Business;
 using LocaMat.Classes_Application;
+using System.Data.Entity;
 
 namespace LocaMat.Application.Classes_Application
 {
@@ -42,14 +43,15 @@ namespace LocaMat.Application.Classes_Application
             serviceAgence.GetAgence(idAgence);
         }*/
 
-        private static void AfficherAgences()
+        public static void AfficherAgences()
         {
             Console.Clear();
             Esthetisme.MiseEnFormeTexte("LISTE DES AGENCES");
-
+            var service = new Services();
+            var agences = service.FaireListe<Agence>();
             foreach (var agence in agences)
             {
-                Console.Write($"{agence.Ville} ({agence.Id})");
+                Console.WriteLine($"{agence.Ville} ({agence.Id})");
 
             }
 
