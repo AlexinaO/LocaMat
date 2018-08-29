@@ -1,5 +1,6 @@
 ﻿using LocaMat.DAL.Classes;
 using System;
+using LocaMat.DAL;
 
 namespace LocaMat.DAL.Data
 {

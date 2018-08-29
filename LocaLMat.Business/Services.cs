@@ -7,7 +7,7 @@ using System.Data.Entity;
 using LocaMat.DAL.Data;
 using LocaMat.DAL.Classes;
 
-namespace LocaLMat.Business
+namespace LocaMat.Business
 {
     public class Services
     {
