@@ -33,7 +33,7 @@ namespace LocaLMat.Business
         {
             using (var contexte = new Contexte())
             {
-                contexte.Agences.Add(marque);
+                contexte.Agences.Add(agence);
                 contexte.SaveChanges();
             }
         }
