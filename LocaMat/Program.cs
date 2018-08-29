@@ -24,7 +24,7 @@ namespace LocaMat.Application
                         Classes_Application.Menus.MenuGestionAgences();
                         break;
 
-                    case "2":
+                    /*case "2":
                         Classes_Application.Menus.MenuGestionProduits();
                         break;
                     case "3":
@@ -35,7 +35,7 @@ namespace LocaMat.Application
                         break;
                     case "5":
                         Classes_Application.Menus.MenuGestionOffresProduits();
-                        break;
+                        break;*/
                     case "Q":
                     case "q":
                         Environment.Exit(0);
