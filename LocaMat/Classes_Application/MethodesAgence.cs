@@ -8,7 +8,7 @@ namespace LocaMat.Application.Classes_Application
 {
     public class MethodesAgence
     {
-        private static void CreerAgence()
+        public static void CreerAgence()
         {
             Console.WriteLine();
             Console.WriteLine("Créer une nouvelle Agence");
