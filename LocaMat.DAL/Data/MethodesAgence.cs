@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LocaMat.Business.ServicesAgence;
 
 namespace LocaMat.DAL.Data
 {
-    public class Methodes
+    public class MethodesAgence
     {
         private static void CreerAgence()
         {
@@ -20,6 +21,18 @@ namespace LocaMat.DAL.Data
             var agence = new Agence();
             agence.Ville = villeAgence;
             agence.Adresse = adresseAgence;
+        }
+
+        private static void ModifierAgence()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Modifier une Agence");
+            var agence = ChoisirAgence();
+            Console.Write("Nouvelle adresse :");
+            agence.Adresse = Console.ReadLine();
+
+            var serviceAgence = new ServicesAgence();
+            serviceAgence.ModifierAgence(agence);
         }
     }
 }
