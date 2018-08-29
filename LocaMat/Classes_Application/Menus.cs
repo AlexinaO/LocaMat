@@ -31,7 +31,7 @@ namespace LocaMat.Classes_Application
 
     }
 
-        public static string MenuGestionAgences()
+        public static int MenuGestionAgences()
         {
             Console.Clear();
             Esthetisme.MiseEnFormeTexte("APPLICATION DE LOCATION DE MATERIEL\n\n", ConsoleColor.DarkCyan, centre: true);
@@ -44,7 +44,7 @@ namespace LocaMat.Classes_Application
             Esthetisme.MiseEnFormeTexte("Q. Quitter\n\n", centre: false);
             Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
 
-            var choix = Console.ReadLine();
+            var choix = int.Parse(Console.ReadLine());
 
             switch (choix)
             {
